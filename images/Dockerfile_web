@@ -1,0 +1,6 @@
+FROM ubuntu
+MAINTAINER Artur Baruchi <abaruchi@abaruchi.dev>
+RUN apt-get update
+RUN apt-get install -y nginx
+ADD exemplo /etc/nginx/sites-enabled/default
+EXPOSE 8080
